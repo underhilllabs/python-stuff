@@ -9,7 +9,9 @@ import time
 import os
 import re
 
-music_dir = "/home/bart/Music/"
+# change this to be your music directory
+homedir = os.path.expanduser('~')
+music_dir = homedir+"/Music/"
 
 def urlify(s):
      # Replace all runs of whitespace with a single dash
